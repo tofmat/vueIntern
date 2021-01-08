@@ -8,13 +8,13 @@
         <img src="../assets/img.png" alt="Woman">
       </div>
       <div class="menuLinks">
-        <h2>Home</h2>
-        <h2>About</h2>
+        <a href="#"><h2>HOME</h2></a>
+        <h2><a href="#">ABOUT</a></h2>
         <div class="menuImage">
           <img src="../assets/menuImage.png" alt="Menu Image">
         </div>
-        <h2>Gallery</h2>
-        <h2>Contact</h2>
+        <h2><a href="#">GALLERY</a></h2>
+        <h2><a href="#">CONTACT</a></h2>
       </div>
     </div>
   </div>
@@ -34,11 +34,9 @@ export default {
 </script>
 
 <style>
-body{
-  margin: 0;
-}
 .mainDiv{
-  padding-top: 70px;
+  padding-top: 60px;
+  padding-bottom: 20px;
   min-height: 100vh;  
   background: linear-gradient(90deg, rgb(182,2,79) 50%, rgb(199, 35, 102) 50%);
 }
@@ -47,6 +45,8 @@ body{
 }
 .title h1 {
   color: white;
+  font-weight: 200;
+  letter-spacing: 15px
 }
 .flexx{
   display: flex;
@@ -74,10 +74,20 @@ body{
   width: 70%;
   color: white;
 }
+.menuLinks h2 {
+  font-weight: 200;
+  letter-spacing: 5px;
+}
 .menuImage img{
   border-radius: 50%;
   width: 100px;
   height: 100px;
+}
+
+.menuLinks a{
+  color:white;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 </style>
