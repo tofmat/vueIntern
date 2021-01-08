@@ -90,4 +90,16 @@ export default {
   cursor: pointer;
 }
 
+@media (max-width: 600px) {
+  .image{
+    width: 100%
+  }
+  .image img {
+    width: 100%;
+  }
+  .menuLinks{
+    flex-direction: column;
+  }
+}
+
 </style>
