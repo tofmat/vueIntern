@@ -2,7 +2,7 @@
   <div class="mainDiv">
     <div class="flexx">
       <div class="title">
-        <h3>AQUILA AVEION</h3>
+        <h1>{{info.name}}</h1>
       </div>
       <div class="image">
         <img src="../assets/img.png" alt="Woman">
@@ -21,8 +21,14 @@
 </template>
 
 <script>
+import { mapGetters } from 'vuex'
+
 export default {
-  
+  computed: {
+    ...mapGetters({
+        info: 'info/info'
+    })
+  }
 
 }
 </script>
@@ -32,12 +38,15 @@ body{
   margin: 0;
 }
 .mainDiv{
-  padding: 70px;
+  padding-top: 70px;
   min-height: 100vh;  
   background: linear-gradient(90deg, rgb(182,2,79) 50%, rgb(199, 35, 102) 50%);
 }
 .title{
   padding-bottom: 50px; 
+}
+.title h1 {
+  color: white;
 }
 .flexx{
   display: flex;
@@ -63,6 +72,7 @@ body{
   align-items: center;
   padding-top: 5rem;
   width: 70%;
+  color: white;
 }
 .menuImage img{
   border-radius: 50%;
